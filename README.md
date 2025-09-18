@@ -1,78 +1,68 @@
 # ☕ Qahwaa Project
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/yousef-enno/qahwaa_project)
 
-A simple **Coffee Shop Manager App** built with **Flutter**.  
-It helps coffee shop owners manage customer orders, track completed drinks, and generate sales reports.
+Qahwaa (قهوة) is a Flutter-based mobile application designed to simplify order management for coffee shops. It provides an intuitive interface for staff to add new customer orders, track their status, and generate insightful sales reports.
 
----
+## ✨ Features
 
-## 🚀 Features
-- Add new orders with:
-  - Customer name
-  - Drink type (Dropdown list)
-  - Special notes
-- Mark orders as **Completed**
-- Generate **Reports**:
-  - Total number of completed orders
-  - Most popular drink (auto-calculated)
+- **Order Management:** Create new orders with customer name, a choice of drink (`Shai`, `Turkish Coffee`, `Hibiscus`), and any special notes.
+- **Order Tracking:** View a live list of pending orders and mark them as "Done" upon completion.
+- **Reporting:** Generate a summary report that includes the total number of completed orders and identifies the most popular drink.
 
----
+## 📸 Screenshots
 
-## 🛠️ Tech Stack
-- **Flutter** (UI & State Management)
-- **Dart** (Business logic)
-- **Material Design** components
+| Dashboard | Add Order | Orders | Report |
+| :---: | :---: | :---: | :---: |
+| <img width="250" alt="Dashboard screen" src="https://github.com/user-attachments/assets/bec360f0-b9ad-416f-9e7a-0e4cd5ccd3e3" /> | <img width="250" alt="Add new order" src="https://github.com/user-attachments/assets/c230a02f-8b46-42a1-bbf0-ef035c9ba3de" /> | <img width="250" alt="Orders screen" src="https://github.com/user-attachments/assets/3cae3942-cd25-4d47-8acf-b3f4d095bfa9" /> | <img width="250" alt="Report screen" src="https://github.com/user-attachments/assets/2c66c200-1b8d-4560-9763-8219fb96564a" /> |
 
+<br/>
 
+## 🏗️ Architecture & Tech Stack
 
-🏗️ Architecture & Principles
+This project is built with **Flutter** for the UI and **Dart** for the business logic, adhering to clean architecture principles.
 
-- Built using OOP (Object-Oriented Programming) concepts such as:
-
-- Encapsulation
-
-- Abstraction
-
-- Inheritance
-
-- Polymorphism
-
-- Applied SOLID principles to keep the code maintainable, scalable, and clean.
-
-## 📸 Screenshots 
-
-- Dashboard screen  
- <img width="305" height="676" alt="image" src="https://github.com/user-attachments/assets/bec360f0-b9ad-416f-9e7a-0e4cd5ccd3e3" />
-
-- Add new order 
-<img width="306" height="672" alt="image" src="https://github.com/user-attachments/assets/c230a02f-8b46-42a1-bbf0-ef035c9ba3de" />
-
-<img width="313" height="676" alt="image" src="https://github.com/user-attachments/assets/92c11aef-bf77-47b5-850b-7d457888b3c3" />
-
-- Orders screen
-<img width="315" height="676" alt="image" src="https://github.com/user-attachments/assets/9eeafd5f-114f-4c63-8ce5-6048fc94e48f" />
-
-<img width="335" height="657" alt="image" src="https://github.com/user-attachments/assets/3cae3942-cd25-4d47-8acf-b3f4d095bfa9" />
-
-- Report screen
-  <img width="332" height="662" alt="image" src="https://github.com/user-attachments/assets/2c66c200-1b8d-4560-9763-8219fb96564a" />
-
- 
-
-
-
----
+- **State Management:** Simple state management using `StatefulWidget` is employed for managing the UI state, which is suitable for the app's current scope.
+- **Design Principles:** The application is built on a foundation of Object-Oriented Programming (OOP) and SOLID principles, emphasizing encapsulation, abstraction, and polymorphism to create a maintainable and scalable codebase.
+- **Data Layer:** A repository pattern (`OrderRepo`) is used to abstract data operations. The current implementation uses an in-memory repository (`InMemoryOrderRepo`) for simplicity.
 
 ## 📂 Project Structure
 
+The core application logic is organized within the `lib` directory as follows:
+
+```
 lib/
-┣ data/
-┃ ┣ models/
-┃ ┃ ┗ drink_model.dart
-┃ ┣ repo/
-┃ ┃ ┗ in_memory_order_repo.dart
-┃ ┗ services/
-┃ ┗ order_manager.dart
-┣ views/
-┃ ┣ qahwaa_dashboard.dart
-┃ ┗ report_view.dart
-┗ main.dart
+├── data/
+│   ├── models/
+│   │   ├── drink_model.dart
+│   │   └── order.dart
+│   ├── repo/
+│   │   ├── in_memory_order_repo.dart
+│   │   └── order_repo.dart
+│   └── services/
+│       ├── order_manager.dart
+│       └── report.dart
+├── views/
+│   ├── qahwaa_dashboard.dart
+│   └── report_view.dart
+└── main.dart
+```
+
+## 🚀 Getting Started
+
+To run this project locally, ensure you have the Flutter SDK installed on your machine.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yousef-enno/qahwaa_project.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd qahwaa_project
+    ```
+3.  **Install the dependencies:**
+    ```bash
+    flutter pub get
+    ```
+4.  **Run the application:**
+    ```bash
+    flutter run
