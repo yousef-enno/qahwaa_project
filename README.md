@@ -11,9 +11,10 @@ Qahwaa (قهوة) is a Flutter-based mobile application designed to simplify ord
 
 ## 📸 Screenshots
 
-| Dashboard | Add Order | Orders | Report |
+| Dashboard | Add Order | Orders | Report | 
 | :---: | :---: | :---: | :---: |
-| <img width="250" alt="Dashboard screen" src="https://github.com/user-attachments/assets/bec360f0-b9ad-416f-9e7a-0e4cd5ccd3e3" /> | <img width="250" alt="Add new order" src="https://github.com/user-attachments/assets/c230a02f-8b46-42a1-bbf0-ef035c9ba3de" /> | <img width="250" alt="Orders screen" src="https://github.com/user-attachments/assets/3cae3942-cd25-4d47-8acf-b3f4d095bfa9" /> | <img width="250" alt="Report screen" src="https://github.com/user-attachments/assets/2c66c200-1b8d-4560-9763-8219fb96564a" /> |
+| <img width="250" alt="Dashboard screen" src="https://github.com/user-attachments/assets/bec360f0-b9ad-416f-9e7a-0e4cd5ccd3e3" /> | <img width="250" alt="Add new order" src="https://github.com/user-attachments/assets/c230a02f-8b46-42a1-bbf0-ef035c9ba3de" /> | <img width="315" height="676" alt="image" src="https://github.com/user-attachments/assets/4a8ad656-0cb2-4555-995c-2d281900afe1" />
+ | <img width="250" alt="Report screen" src="https://github.com/user-attachments/assets/2c66c200-1b8d-4560-9763-8219fb96564a" /> |
 
 <br/>
 
@@ -66,3 +67,4 @@ To run this project locally, ensure you have the Flutter SDK installed on your m
 4.  **Run the application:**
     ```bash
     flutter run
+
